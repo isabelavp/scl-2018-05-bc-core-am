@@ -91,6 +91,7 @@
 	width: 300px;
 	height: 200px;
 	color: black;
+	background: #C2BCC1;
 }
 #box:hover{
 	background-image: url(../src/image/lupa.jpg);
@@ -142,6 +143,7 @@
 	width: 300px;
 	height: 200px;
 	color: black;	
+	background: #C2BCC1;
 
 
 }
@@ -177,6 +179,7 @@
 	width: 400px;
 	height: 200px;
 	color: black;	
+	background: #C2BCC1;
 
 }
 
