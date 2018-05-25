@@ -5,9 +5,93 @@
   <title>Caesar Cipher</title>
   <link rel="stylesheet" href="style.css" />
 </head>
-<body>
 
-  <div id="root"></div>
+
+  <body id="labcolor">
+  <section>
+   <div id="imag"></div> 
+  	
+  </section>
+ 
+
+<header id="zero">
+	<h1 id="title"><strong>¡Bienvenida!</strong></h1>
+	<p id="aling">
+	<img src="image/inspect.png" alt="inspector" id="imag2">
+	Con el <strong id="one">Codigo Cesar</strong> podras cifrar y descifrar tus mensajes.</p>
+	<p id="aling">Nunca más nadie sabra que estas escribiendo, 	Solo tu y las personas que desees podran entender el codigo.
+	</p>
+
+</header>
+
+  
+
+<section>
+
+	
+    <table id="text">
+  <tr>
+   <th id="text2">Solo debes escribir un número entre <strong id="ground">0</strong> y <strong id="ground">26 </strong>para iniciar a <strong id="cis">  ¡cifrar!  </strong>tu Mensaje.       </th>
+
+    <td ><select id="littleNum">
+       
+       <option value=""></option>
+       <option value="A">0</option>
+       <option value="B">1</option>
+       <option value="C">2</option>
+       <option value="D">3</option>
+       <option value="E">4</option>
+       <option value="F">5</option>
+       <option value="G">6</option>
+       <option value="H">7</option>
+       <option value="I">8</option>
+       <option value="J">9</option>
+       <option value="K">10</option>
+       <option value="L">11</option>
+       <option value="M">12</option>
+       <option value="N">13</option>
+       <option value="O">14</option>
+       <option value="P">15</option>
+       <option value="Q">16</option>
+       <option value="R">17</option>
+       <option value="S">18</option>
+       <option value="T">19</option>
+       <option value="U">20</option>
+       <option value="V">21</option>
+       <option value="W">22</option>
+       <option value="X">23</option>
+       <option value="Y">24</option>
+       <option value="Z">25</option>
+      </select></td>
+    <td><button id="butx">Llave</button></th>
+  </tr>
+  </table><br><br><br>
+  <table id="central">
+  <thead>
+  	<th id="centrar">Escribe el Mensaje a ¡Cifrar!</th>
+  	<th id="centrar">                             </th>
+  	<th id="centrar2">Escribe el Mensaje a ¡Descifrar!</th>
+  	<th id="centrar">                             </th>
+  	<th id="centrar3">Tu Mensaje</th>
+  </thead>
+  	<tbody>
+  		<tr>
+  			<td><textarea id="box" rows="10" cols="50" value="">  </textarea></td>
+  			<td><button id="but"><strong>Cifra</strong></button></td>
+  			<td><textarea id="secondBox" rows="10" cols="50" value="">  </textarea></td>
+  			<td><button id="secondBut"><strong>Descifra</strong></button></td>
+  			<td><textarea id="thirdBox" rows="10" cols="50" value="">  </textarea></td>
+  			<td><button id="thirdBut"><strong>Limpiar</strong></button></td>
+  			
+  		</tr> 	</tbody>
+  </table>
+ 
+		
+			
+</section>
+
+
+</body>
 
   <script src="cipher.js"></script>
   <script src="index.js"></script>
