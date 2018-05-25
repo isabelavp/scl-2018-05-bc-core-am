@@ -4,8 +4,9 @@
 
 #imag {
 	background-image: url(../src/image/pai.jpg);
-	width: 1414px;
+	width: 1454px;
 	height: 194px;
+	
 
 }
 
@@ -24,6 +25,7 @@
 	width:150px;
 	height:150px;
 }
+
 #title {
 	background: 40px black;
 	font-size: 30px;
