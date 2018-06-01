@@ -32,7 +32,7 @@ window.cipher = {
 
   
   decode: (number,letter) => {
-      let result = "";
+      let resultDecode = "";
 
          for(var i = 0; i < letter.length; i++){
       
@@ -41,14 +41,14 @@ window.cipher = {
 
       //codigo ansii para letras mayusculas 
       if(newCodeAnsii >= 65 && newCodeAnsii < 91) { 
-      result += String.fromCharCode(newCodeAnsii -90 - parseInt(number))% 26 + 90;
+      resultDecode += String.fromCharCode(newCodeAnsii -90 - parseInt(number))% 26 + 90;
       //codigo ansii para letras minusculas
       
       } else if(newCodeAnsii >= 97 && newCodeAnsii < 123) { 
-      result += String.CharCode(newcodeAnsii - 122 - parseInt(number)) % 26 + 122;
+      resultDecode += String.CharCode(newcodeAnsii - 122 - parseInt(number)) % 26 + 122;
       //codigo ansii para las demas
               } else { 
-                result += String.fromCharCode(newCodeAnsii);
+                resultDecode += String.fromCharCode(newCodeAnsii);
                           }
             
        }
