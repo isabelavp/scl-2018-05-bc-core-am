@@ -1,0 +1,181 @@
+#labcolor {
+	background-color: rgb(241, 196, 15);
+}
+
+
+
+
+#zero {
+	font-family: "comic sans";
+
+}
+
+#imag {
+	background-image: url(../css/image/pai.jpg);
+	width: 1454px;
+	height: 194px;
+	
+
+}
+#aling {
+	font-size: 20px;
+	font-style: 
+	background-image: url(../css/image/inspectora.png)
+}
+
+#title {
+	background: 40px black;
+	font-size: 30px;
+	color: #FDFEFE;
+	text-align: center;
+
+
+}
+
+#title:hover {
+	color: yellow;
+	font-size: 50px;
+}
+
+#position{
+	display: inline-block;
+}
+
+#one {
+
+	font-size: 25px;
+	color: blue;
+	margin-top: #FDFEFE;
+
+
+}
+
+#text {
+	font-size: 20px;
+	display: inline-block;
+}
+
+#text2{
+	font-size: 15px;
+}
+
+#ground {
+	color: red;
+	font-size: 20px;
+}
+
+#cis {
+	color: blue;
+	font-synthesis: 30px;
+}
+
+#littleNum {
+	width: 50px;
+	height: 30px;
+	left: 200px;
+	background-color: grey;
+	
+}
+#butx {
+	height: 50px;
+    width: 50px;
+	background: black;
+	box-shadow: blue;
+	color: yellow;
+	font-size: 15px;
+}
+
+#box {
+	resize: none;
+	width: 300px;
+	height: 200px;
+	color: black;
+	background-image: url(../css/image/lupa.png);
+
+}
+#box:hover{
+	background: white;
+	cursor: pointer;
+}
+	
+
+
+
+#but {
+	right: 50px;
+	width: 80px;
+	height: 40px;
+	background: black;
+	color: yellow;
+	background-image: url();
+	font-size: 15px;
+	align-content: center;
+
+}
+#but:hover{
+	background-image: url(../css/image/llave.png);
+	background: grey;
+	cursor: pointer;
+	color: white;
+	}
+
+#central {
+	width: 800px;
+	text-align: center;
+	margin: black;
+}
+
+#centrar {
+	width: 400px;
+
+}
+
+#centrar2 {
+	width: 400px;
+
+}
+#des {
+	color: blue;
+}
+
+
+#secondBut {
+	width: 80px;
+	height: 40px;
+	background: black;
+	background-attachment: yellow;
+	color: yellow;
+	outline-color: fff;
+	font-size: 15px;
+
+}
+#secondBut:hover{
+	background-image: url(../css/image/llave.png);
+	background: grey;
+	cursor: pointer;
+	color: white;
+	}
+
+#centrar3 {
+	width: 400px;
+
+}
+
+
+
+#butclear {
+	width: 80px;
+	height: 40px;
+	background: black;
+	background-attachment: yellow;
+	color: yellow;
+	outline-color: fff;
+	font-size: 15px;
+}
+
+#butclear:hover{
+	background-image: url(../css/image/borrador.png);
+	background: grey;
+	cursor: pointer;
+	color: white;
+	}

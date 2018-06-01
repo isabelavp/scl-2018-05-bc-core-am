@@ -2,13 +2,7 @@
 	background-color: rgb(241, 196, 15);
 }
 
-#imag {
-	background-image: url(../src/image/pai.jpg);
-	width: 1454px;
-	height: 194px;
-	
 
-}
 
 
 #zero {
@@ -16,14 +10,17 @@
 
 }
 
+#imag {
+	background-image: url(../css/image/pai.jpg);
+	width: 1454px;
+	height: 194px;
+	
+
+}
 #aling {
 	font-size: 20px;
 	font-style: 
-}
-#imag2 {
-	float:left;
-	width:150px;
-	height:150px;
+	background-image: url(../css/image/inspectora.png)
 }
 
 #title {
@@ -93,10 +90,11 @@
 	width: 300px;
 	height: 200px;
 	color: black;
-	background: #C2BCC1;
+	background-image: url(../css/image/lupa.png);
+
 }
 #box:hover{
-	background-image: url(../src/image/lupa.jpg);
+	background: white;
 	cursor: pointer;
 }
 	
@@ -115,7 +113,7 @@
 
 }
 #but:hover{
-	background-image: url(image/llave.png);
+	background-image: url(../css/image/llave.png);
 	background: grey;
 	cursor: pointer;
 	color: white;
@@ -140,19 +138,6 @@
 	color: blue;
 }
 
-#secondBox {
-	resize: none;
-	width: 300px;
-	height: 200px;
-	color: black;	
-	background: #C2BCC1;
-
-
-}
-#secondBox:hover{
-	background-image: url(../src/image/lupa.jpg);
-	cursor: pointer;
-}
 
 #secondBut {
 	width: 80px;
@@ -165,7 +150,7 @@
 
 }
 #secondBut:hover{
-	background-image: url(image/llave.png);
+	background-image: url(../css/image/llave.png);
 	background: grey;
 	cursor: pointer;
 	color: white;
@@ -176,21 +161,9 @@
 
 }
 
-#thirdBox {
-	resize: none;
-	width: 400px;
-	height: 200px;
-	color: black;	
-	background: #C2BCC1;
 
-}
 
-#thirdBox:hover {
-	background-image: url(../src/image/lupa.jpg);
-	cursor:pointer;
-}
-
-#thirdBut {
+#butclear {
 	width: 80px;
 	height: 40px;
 	background: black;
@@ -200,8 +173,8 @@
 	font-size: 15px;
 }
 
-#thirdBut:hover{
-	background-image: url(image/llave.png);
+#butclear:hover{
+	background-image: url(../css/image/borrador.png);
 	background: grey;
 	cursor: pointer;
 	color: white;
