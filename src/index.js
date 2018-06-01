@@ -17,7 +17,7 @@ window.onload = () => { //esta es la funcion de crear eventos con DOM
     butDecode.addEventListener("click", () => { // uso de arrow function
      let letter = document.getElementById("boxTextDecode").value;
      let number = document.getElementById("key").value;
-     let resultDecode = window.cipher.decode(number,letter);
+     let resultDecode = window.cipher.decode(number, letter);
           document.getElementById("boxTextTwo").innerHTML = resultDecode;
 
     });
