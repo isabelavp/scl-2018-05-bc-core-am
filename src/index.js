@@ -5,8 +5,8 @@ window.onload = () => { //esta es la funcion de crear eventos con DOM
 
     butEncode.addEventListener("click", () => {  // uso de arrow function
      let letter = document.getElementById("boxTextEncode").value;
-     let num = document.getElementById("key").value;
-     let result = window.cipher.encode(num,letter);
+     let offset = document.getElementById("key").value;
+     let result = window.cipher.encode(offset,letter);
           document.getElementById("boxTextTwo").innerHTML = result;
     });
      
@@ -16,8 +16,8 @@ window.onload = () => { //esta es la funcion de crear eventos con DOM
 
     butDecode.addEventListener("click", () => {  // uso de arrow function
      let letter = document.getElementById("boxTextDecode").value;
-     let num = document.getElementById("key").value;
-     let result = window.cipher.decode(num,letter);
+     let offset = document.getElementById("key").value;
+     let result = window.cipher.decode(offset,letter);
           document.getElementById("boxTextTwo").innerHTML = result;
 
     });
