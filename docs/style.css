@@ -1,14 +1,3 @@
-/*
-#root*{
-root = true
-indent_style = space
-indent_size = 2
-charset = utf-8
-trim_trailing_whitespace = true
-insert_final_newline = true
-}
-*/
-/*el margen y padding de toda la pagina web*/
 * {
     box-sizing: border-box;
     margin: 0;
@@ -19,11 +8,46 @@ insert_final_newline = true
 	background-color: #F4D03F; /*rgb(241, 196, 15);*/
 	font-family: "comic sans";
     width: 100%;
+    max-width: 1700px;
+    margin: 0px auto;
+}
+#imag {
+	background-image: url(../docs/image/pai.jpg);
+	width: 100%;
+	height: 300px;
+	
+}
+
+#title {
+	background: black;
+	font-size: 30px;
+	color: #FDFEFE;
+	text-align: center;
+	width: 100%;
+
+
+}
+/* se usa :hover para crear un nuevo color y tamaño en la letra;  */
+
+#title:hover {
+	color: yellow;
+	font-size: 50px;
+}
+
+#container { 
+	font-family: "comic sans";
+    width: 100%;
     max-width: 1200px;
     margin: 0px auto;
 }
-/*cada vez que utilize la clase container, tomara estos estilos*/
-#container { 
+#container1 { 
+	font-family: "comic sans";
+    width: 100%;
+    max-width: 1200px;
+    margin: 0px auto;
+}
+
+#container2 { 
 	font-family: "comic sans";
     width: 100%;
     max-width: 1200px;
@@ -43,36 +67,15 @@ insert_final_newline = true
 /*se usa la col-12 porque se va a usar una sola columna*/
 .col-12 {
     /* (12/12) x 100 */
-    width: 100%;
-
-}
-
-#imag {
-	background-image: url(../src/image/pai.jpg);
-	width: 1700px;
-	height: 300px;
-	
-	
-
+    width: 1700px;
 }
 
 
 
-#title {
-	background: 100% black;
-	font-size: 30px;
-	color: #FDFEFE;
-	text-align: center;
-	width: 100%;
 
 
-}
-/* se usa :hover para crear un nuevo color y tamaño en la letra;  */
 
-#title:hover {
-	color: yellow;
-	font-size: 50px;
-}
+
 
 
 /*se usa la col-6 porque se van a usar dos columna*/
@@ -85,6 +88,11 @@ insert_final_newline = true
 /* tamaño de los números 0 y 25*/
 
 #ground {
+	color: red;
+	font-size: 20px;
+}
+
+#ground1 {
 	color: red;
 	font-size: 20px;
 }

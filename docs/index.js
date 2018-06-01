@@ -7,7 +7,8 @@ window.onload = () => { //esta es la funcion de crear eventos con DOM
      let letter = document.getElementById("boxTextEncode").value;
      let number = document.getElementById("key").value;
      let result = window.cipher.encode(number,letter);
-          document.getElementById("boxTextTwo").innerHTML = result;
+     let min = result.toLowerCase();
+          document.getElementById("boxTextTwo").innerHTML = min;
     });
      
 
@@ -18,7 +19,8 @@ window.onload = () => { //esta es la funcion de crear eventos con DOM
      let letter = document.getElementById("boxTextDecode").value;
      let number = document.getElementById("key").value;
      let resultDecode = window.cipher.decode(number, letter);
-          document.getElementById("boxTextTwo").innerHTML = resultDecode;
+     let min2 = resultDecode.toLowerCase();
+          document.getElementById("boxTextTwo").innerHTML = min2;
 
     });
     
