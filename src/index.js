@@ -3,10 +3,10 @@ window.onload = () => { //esta es la funcion de crear eventos con DOM
     
     const butEncode = document.getElementById("butEncode"); //variable const porque no se modifica, para boton de codigo
 
-    butEncode.addEventListener("click", () => {  // uso de arrow function
+    butEncode.addEventListener("click", () => { // uso de arrow function
      let letter = document.getElementById("boxTextEncode").value;
-     let offset = document.getElementById("key").value;
-     let result = window.cipher.encode(offset,letter);
+     let number = document.getElementById("key").value;
+     let result = window.cipher.encode(number,letter);
           document.getElementById("boxTextTwo").innerHTML = result;
     });
      
@@ -14,22 +14,30 @@ window.onload = () => { //esta es la funcion de crear eventos con DOM
     const butDecode = document.getElementById("butDecode"); //variable const porque no se modifica, para boton de decodificar
 
 
-    butDecode.addEventListener("click", () => {  // uso de arrow function
+    butDecode.addEventListener("click", () => { // uso de arrow function
      let letter = document.getElementById("boxTextDecode").value;
-     let offset = document.getElementById("key").value;
-     let result = window.cipher.decode(offset,letter);
+     let number = document.getElementById("key").value;
+     let result = window.cipher.decode(number,letter);
           document.getElementById("boxTextTwo").innerHTML = result;
 
     });
     
-    const butClear = document.getElementById('butClear');  //variable const porque no se modifica, para boton de limpieza
+    const butClear = document.getElementById('butClear'); //variable const porque no se modifica, para boton de limpieza
 
-
-    butClear.addEventListener("click", () => {  // uso de arrow function
+    butClear.addEventListener("click", () => { // uso de arrow function
         document.getElementById('boxTextEncode').value = '';
         document.getElementById('boxTextDecode').value = '';
         document.getElementById('boxTextTwo').value = '';
-        document.getElementById("key").value = 0;
+        document.getElementById("key").value = '';
     }); 
 
 }
+
+
+
+
+
+
+
+    
+    

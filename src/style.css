@@ -1,181 +1,217 @@
-#labcolor {
-	background-color: rgb(241, 196, 15);
+/*
+#root*{
+root = true
+indent_style = space
+indent_size = 2
+charset = utf-8
+trim_trailing_whitespace = true
+insert_final_newline = true
+}
+*/
+/*el margen y padding de toda la pagina web*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-
-
-
-#zero {
+#labcolor {
+	background-color: #F4D03F; /*rgb(241, 196, 15);*/
 	font-family: "comic sans";
+    width: 100%;
+    max-width: 1200px;
+    margin: 0px auto;
+}
+/*cada vez que utilize la clase container, tomara estos estilos*/
+#container { 
+	font-family: "comic sans";
+    width: 100%;
+    max-width: 1200px;
+    margin: 0px auto;
+}
+
+.row{
+    width: 100%;
+}
+
+[class*="col-"] {
+    min-height: 7px;
+    padding: 12px;
+    float: left;
+
+}
+/*se usa la col-12 porque se va a usar una sola columna*/
+.col-12 {
+    /* (12/12) x 100 */
+    width: 100%;
 
 }
 
 #imag {
-	background-image: url(../css/image/pai.jpg);
-	width: 1454px;
-	height: 194px;
+	background-image: url(../src/image/pai.jpg);
+	width: 1700px;
+	height: 300px;
+	
 	
 
 }
-#aling {
-	font-size: 20px;
-	font-style: 
-	background-image: url(../css/image/inspectora.png)
-}
+
+
 
 #title {
-	background: 40px black;
+	background: 100% black;
 	font-size: 30px;
 	color: #FDFEFE;
 	text-align: center;
+	width: 100%;
 
 
 }
+/* se usa :hover para crear un nuevo color y tamaño en la letra;  */
 
 #title:hover {
 	color: yellow;
 	font-size: 50px;
 }
 
-#position{
-	display: inline-block;
+
+/*se usa la col-6 porque se van a usar dos columna*/
+
+.col-6 {
+    /* (6/12) x 100 */
+    width: 50%;
 }
 
-#one {
-
-	font-size: 25px;
-	color: blue;
-	margin-top: #FDFEFE;
-
-
-}
-
-#text {
-	font-size: 20px;
-	display: inline-block;
-}
-
-#text2{
-	font-size: 15px;
-}
+/* tamaño de los números 0 y 25*/
 
 #ground {
 	color: red;
 	font-size: 20px;
 }
 
-#cis {
-	color: blue;
-	font-synthesis: 30px;
-}
-
-#littleNum {
-	width: 50px;
-	height: 30px;
+/* llave que se coloca para indicar numero de desplazamientos*/
+#key {
+	width: 60px;
+	height: 50px;
 	left: 200px;
 	background-color: grey;
-	
-}
-#butx {
-	height: 50px;
-    width: 50px;
-	background: black;
-	box-shadow: blue;
-	color: yellow;
-	font-size: 15px;
-}
+	}
 
-#box {
+/*cuadro de texto donde se escribe el mensaje a cifrar */
+
+#boxTextEncode {
 	resize: none;
-	width: 300px;
+	width: 400px;
 	height: 200px;
 	color: black;
-	background-image: url(../css/image/lupa.png);
+	background: #E5E7E9;
+	border-style: double;
+	font-size: 30px;
 
 }
-#box:hover{
+
+/* se usa :hover para crear un nuevo color y cambio de imagen;  */
+#boxTextEncode:hover{
 	background: white;
 	cursor: pointer;
 }
 	
 
+/*boton para cifrar */
 
-
-#but {
+#butEncode {
 	right: 50px;
 	width: 80px;
 	height: 40px;
 	background: black;
-	color: yellow;
+	color: white;
+	font-style: 25px;
 	background-image: url();
 	font-size: 15px;
 	align-content: center;
 
 }
-#but:hover{
-	background-image: url(../css/image/llave.png);
+/* se usa :hover para crear un nuevo color y cambio de cursor;  */
+#butEncode:hover{
 	background: grey;
 	cursor: pointer;
 	color: white;
 	}
 
-#central {
-	width: 800px;
-	text-align: center;
-	margin: black;
-}
 
-#centrar {
-	width: 400px;
-
-}
-
-#centrar2 {
-	width: 400px;
+/* cuadro de texto donde aparece el nuevo mensaje*/
+#boxTextTwo{
+	resize: none;
+	width: 500px;
+	height: 200px;
+	color: black;
+	background: #E5E7E9;
+	border-style: double;
+	font-size: 40px;
 
 }
-#des {
-	color: blue;
+/* se usa :hover para crear un nuevo color y cambio de imagen;  */
+#boxTextTwo:hover{
+	background: white;
+	cursor: pointer;
 }
 
-
-#secondBut {
+/* boton de limpieza*/
+#butClear {
 	width: 80px;
 	height: 40px;
 	background: black;
 	background-attachment: yellow;
-	color: yellow;
+	color: white;
+	font-style: 25px;
 	outline-color: fff;
 	font-size: 15px;
-
 }
-#secondBut:hover{
-	background-image: url(../css/image/llave.png);
+/* se usa :hover para crear un nuevo color y cambio de cursor;  */
+
+#butClear:hover{
 	background: grey;
 	cursor: pointer;
 	color: white;
 	}
 
-#centrar3 {
+/* cuadro de texto donde se escribe el mensaje cifrado*/
+
+#boxTextDecode {
+	resize: none;
 	width: 400px;
+	height: 200px;
+	color: black;
+	background: #E5E7E9;
+	border-style: double;
+	font-size: 25px;
 
 }
+/* se usa :hover para crear un nuevo color y cambio de imagen;  */
+#boxTextDecode:hover{
+	background: white;
+	cursor: pointer;
+}
 
-
-
-#butclear {
+/* boton para decifrar*/
+#butDecode {
 	width: 80px;
 	height: 40px;
 	background: black;
 	background-attachment: yellow;
-	color: yellow;
+	color: white;
+	font-style: 25px;
 	outline-color: fff;
 	font-size: 15px;
-}
 
-#butclear:hover{
-	background-image: url(../css/image/borrador.png);
+}
+/* se usa :hover para crear un nuevo color y cambio de cursor;  */
+#butDecode:hover{
 	background: grey;
 	cursor: pointer;
 	color: white;
 	}
+
+
+
+

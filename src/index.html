@@ -1,71 +1,67 @@
-
 <!DOCTYPE html>
 <html>
 <head>
   <meta charset="utf-8">
   <title>Caesar Cipher</title>
-  <link rel="stylesheet" href="style.css"/><!-- el enlace al estilo de diseño de css -->
+  <link rel="stylesheet" href="style.css" /><!-- el enlace al estilo de diseño de css -->
 </head>
 
 
 <body id="labcolor">
 
    <!-- se crea un header para el encabezado, se le asigna un id container para evitar que la pagina se desordene al cambiar los tamaños -->
-    <header id="zero">
-     <div id="container"><!-- se crea para mantener todo dentro de este iid y asi evitar que la pagina web se desordene al cambiar de tamaño -->
-      <div class="row"> <!-- se crean row para ordenar las filas  -->
-        <div class="col-12"> <!-- se usa la col-12 porque se va a usar una sola columna  -->
-            <div id="imag"></div> 
-        </div>
+  <header id="zero">
+    <div id="container"><!-- se crea para mantener todo dentro de este iid y asi evitar que la pagina web se desordene al cambiar de tamaño -->
+     <div class="row"> <!-- se crean row para ordenar las filas  -->
+       <div class="col-12"> <!-- se usa la col-12 porque se va a usar una sola columna  -->
+        <div id="imag"></div> 
       </div>
+     </div><br><br>
      
-      <div class="row"> <!-- se crean row para ordenar las filas  -->
-        <div class="col-12"><!-- se usa la col-12 porque se va a usar una sola columna  -->
-             <h1 id="title"><strong>¡Bienvenida!</strong></h1>
-        </div>
+     <div class="row"> <!-- se crean row para ordenar las filas  -->
+      <div class="col-12"><!-- se usa la col-12 porque se va a usar una sola columna  -->
+         <h1 id="title"><strong>¡Bienvenida!</strong></h1>
       </div>
-     </div>
-    </header><br>
-
-   <div id="container"><!-- se crea para mantener todo dentro de este iid y asi evitar que la pagina web se desordene al cambiar de tamaño -->
-     <div class="row"><!-- se crean row para ordenar las filas  -->
-       <div class="col-12">  <!-- se usa la col-12 porque se va a usar una sola columna  -->    
-       <h2>Con el <strong><a href="https://es.wikipedia.org/wiki/Cifrado_César" target="_blank">Codigo Cesar</a></strong> podras cifrar y descifrar tus mensajes.</h2><br><!-- se usa el target="_blank" para que el concepto de codigo cesar se abra en una nueva ventana  -->
-       <h2>Con este código secreto solo la persona aquien mandes la llave(key) sabra que estas escribiendo, asi que ni tu novix ni tus amigos sabran lo que escribes.
-       </h2><br>
-       <h2>Si quieres <strong>¡cifrar! o ¡Descifrar! </strong> mensaje secreto, escribelo en el cuadro de texto y clip en el boton correspondiente</h2>
      </div>
     </div>
-   </div>
+  </header><br>
+
+    <div id="container"><!-- se crea para mantener todo dentro de este iid y asi evitar que la pagina web se desordene al cambiar de tamaño -->
+     <div class="row"><!-- se crean row para ordenar las filas  -->
+        <div class="col-12">   <!-- se usa la col-12 porque se va a usar una sola columna  -->    
+          <h3>Con el <strong><a href="https://es.wikipedia.org/wiki/Cifrado_César" target="_blank">Codigo Cesar</a></strong> podras cifrar y descifrar tus mensajes.</h3><br><!-- se usa el target="_blank" para que el concepto de codigo cesar se abra en una nueva ventana  -->
+          <h3>Con este código secreto solo la persona a quien mandes la llave(key) sabra que estas escribiendo, asi que ni tu novix ni tus amigos sabran lo que escribes.
+          </h3><br>
+          <h3>Si quieres <strong>¡cifrar! o ¡Descifrar! </strong> mensaje secreto, escribelo en el cuadro de texto y clip en el boton correspondiente</h3>
+        </div>
+     </div>
+    </div><br><br>
 
   
   
    <div id="container"><!-- se crea para mantener todo dentro de este iid y asi evitar que la pagina web se desordene al cambiar de tamaño -->
     <div class="row"><!-- se crean row para ordenar las filas  -->
-       <div class="col-6"><!-- se usa la col-6 porque se van a usar dos columna-->
-           <h3>Solo debes escribir un número entre <strong id="ground">0</strong> y <strong id="ground">25 </strong>para iniciar a <strong id="cis">  ¡cifrar! o ¡descifrar!</strong> tu Mensaje.  <input id="key" min ="0" max="25" value="0"></h3><br>
-        </div>
-        <div class="col-6"><!-- se usa la col-6 porque se van a usar dos columna-->
-      <h3>Tu Mensaje</h3>
+      <div class="col-4"><!-- se usa la col-4 porque se van a usar tres columna-->
+           <h3>Solo debes escribir un número entre <strong id="ground">0</strong> y <strong id="ground">25 </strong>para iniciar a <strong id="cis">  ¡cifrar! o ¡descifrar!</strong> tu Mensaje.  <input id="key" min ="0" max="25" value=""></h3><br>          
+      </div>
+     <div class="col-4"><!-- se usa la col-4 porque se van a usar tres columna-->
+        <h3>Escribe el Mensaje a ¡Cifrar!</h3><br>
+        <textarea id="boxTextEncode" rows="10" cols="50" placeholder="Escribe el Mensaje a Cifrar"></textarea><!--se crea el cuadro de texto donde ira el mensaje a cifrar  -->
+        <button id="butEncode">Cifra</button><!-- se crea el bóton de cifrado -->
+     </div>
+     <div class="col-4"><!-- se usa la col-4 porque se van a usar tres columna-->
+        <h3>Escribe el Mensaje a ¡Descifrar!</h3><br>
+        <textarea id="boxTextDecode" rows="10" cols="50" placeholder="Escribe el Mensaje a Decifrar"> </textarea><br><!--se crea el cuadro de texto donde ira el mensaje a descifrar  -->
+        <button id="butDecode">Descifra</button><!-- se crea el bóton de decifrado -->
+     </div>
+   </div><br><br>
+   <div class="row"><!-- se crean row para ordenar las filas  -->
+    <div class="col-12"><!-- se usa la col-12 porque se va a usar una columna-->
+       <h3>Tu Mensaje</h3>
       <textarea id="boxTextTwo" rows="10" cols="50" placeholder="Tu nuevo Mensaje"></textarea><!-- se crea el cuadro de texto donde ira el mensaje cifrado o descifrado -->
       <button id="butClear">Clear</button><!-- se crea el bóton de limpieza -->
-     </div>
     </div>
    </div>
-    
-   <div class="row"><!-- se crean row para ordenar las filas  -->
-     <div class="col-6"><!-- se usa la col-6 porque se van a usar dos columna-->
-        <h3>Escribe el Mensaje a ¡Cifrar!</h3>
-      <textarea id="boxTextEncode" rows="10" cols="50" placeholder="Escribe el Mensaje a Cifrar"></textarea><!--se crea el cuadro de texto donde ira el mensaje a cifrar  -->
-      <button id="butEncode">Cifra</button><!-- se crea el bóton de cifrado -->
-     </div>
-   <div class="col-6"><!-- se usa la col-6 porque se van a usar dos columna-->
-      <h3>Escribe el Mensaje a ¡Descifrar!</h3>
-      <textarea id="boxTextDecode" rows="10" cols="50" placeholder="Escribe el Mensaje a Decifrar"> </textarea><!--se crea el cuadro de texto donde ira el mensaje a descifrar  -->
-      <button id="butDecode">Descifra</button><!-- se crea el bóton de decifrado -->
-     </div>
-   </div>
-  </div>
  </div>
   
 </body>
