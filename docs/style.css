@@ -103,6 +103,7 @@
 	height: 50px;
 	left: 200px;
 	background-color: grey;
+	font-size: 20px;
 	}
 
 /*cuadro de texto donde se escribe el mensaje a cifrar */
@@ -146,6 +147,42 @@
 	color: white;
 	}
 
+	#boxTextDecode {
+	resize: none;
+	width: 400px;
+	height: 200px;
+	color: black;
+	background: #E5E7E9;
+	border-style: double;
+	font-size: 30px;
+
+}
+/* se usa :hover para crear un nuevo color y cambio de imagen;  */
+#boxTextDecode:hover{
+	background: white;
+	cursor: pointer;
+}
+
+/* boton para decifrar*/
+#butDecode {
+	width: 80px;
+	height: 40px;
+	background: black;
+	background-attachment: yellow;
+	color: white;
+	font-style: 25px;
+	outline-color: fff;
+	font-size: 15px;
+
+}
+/* se usa :hover para crear un nuevo color y cambio de cursor;  */
+#butDecode:hover{
+	background: grey;
+	cursor: pointer;
+	color: white;
+	}
+
+
 
 /* cuadro de texto donde aparece el nuevo mensaje*/
 #boxTextTwo{
@@ -185,40 +222,6 @@
 
 /* cuadro de texto donde se escribe el mensaje cifrado*/
 
-#boxTextDecode {
-	resize: none;
-	width: 400px;
-	height: 200px;
-	color: black;
-	background: #E5E7E9;
-	border-style: double;
-	font-size: 25px;
-
-}
-/* se usa :hover para crear un nuevo color y cambio de imagen;  */
-#boxTextDecode:hover{
-	background: white;
-	cursor: pointer;
-}
-
-/* boton para decifrar*/
-#butDecode {
-	width: 80px;
-	height: 40px;
-	background: black;
-	background-attachment: yellow;
-	color: white;
-	font-style: 25px;
-	outline-color: fff;
-	font-size: 15px;
-
-}
-/* se usa :hover para crear un nuevo color y cambio de cursor;  */
-#butDecode:hover{
-	background: grey;
-	cursor: pointer;
-	color: white;
-	}
 
 
 

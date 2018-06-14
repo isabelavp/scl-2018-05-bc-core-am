@@ -41,11 +41,12 @@ window.cipher = {
 
       //codigo ansii para letras mayusculas 
       if(newCodeAnsii >= 65 && newCodeAnsii < 91) { 
-      resultDecode += String.fromCharCode(newCodeAnsii -90 - parseInt(number))% 26 + 90;
+      resultDecode += String.fromCharCode((newCodeAnsii -90 - parseInt(number))% 26 + 90);
+      console.log("hola");
       //codigo ansii para letras minusculas
       
       } else if(newCodeAnsii >= 97 && newCodeAnsii < 123) { 
-      resultDecode += String.fromCharCode(newCodeAnsii - 122 - parseInt(number)) % 26 + 122;
+      resultDecode += String.fromCharCode((newCodeAnsii - 122 - parseInt(number)) % 26 + 122);
       //codigo ansii para las demas
               } else { 
                 resultDecode += String.fromCharCode(newCodeAnsii);
@@ -59,3 +60,5 @@ window.cipher = {
 }
 
 }
+
+//createcipherwithOffset
