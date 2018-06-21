@@ -24,6 +24,8 @@ insert_final_newline = true
 }
 #imag {
 	background-image: url(../src/image/pai.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
 	width: 100%;
 	height: 300px;
 	

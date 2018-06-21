@@ -7,7 +7,8 @@ window.onload = () => { //esta es la funcion de crear eventos con DOM
      let letter = document.getElementById("boxTextEncode").value;
      let number = document.getElementById("key").value;
      let result = window.cipher.encode(number,letter);
-          document.getElementById("boxTextTwo").innerHTML = result;
+     let rEncode = result.toLowerCase();
+          document.getElementById("boxTextTwo").innerHTML = rEncode;
     });
      
 
@@ -18,9 +19,11 @@ window.onload = () => { //esta es la funcion de crear eventos con DOM
      let letter = document.getElementById("boxTextDecode").value;
      let number = document.getElementById("key").value;
      let resultDecode = window.cipher.decode(number, letter);
+     
           document.getElementById("boxTextTwo").innerHTML = resultDecode;
 
     });
+    
     
     const butClear = document.getElementById('butClear'); //variable const porque no se modifica, para boton de limpieza
 
@@ -28,11 +31,14 @@ window.onload = () => { //esta es la funcion de crear eventos con DOM
         document.getElementById('boxTextEncode').value = '';
         document.getElementById('boxTextDecode').value = '';
         document.getElementById('boxTextTwo').value = '';
-        document.getElementById("key").value = '';
+        document.getElementById("key").value = 0;
     }); 
 
 }
 
+/* function cambiaURL(url){
+       window.location = url
+       }*/
 
 
 
